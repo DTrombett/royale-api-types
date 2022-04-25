@@ -1,6 +1,6 @@
 {
 	"name": "royale-api-types",
-	"version": "1.0.1",
+	"version": "0.0.0",
 	"description": "Types for the Clash Royale API",
 	"main": "dist/index.js",
 	"types": "dist/index.d.ts",
@@ -9,6 +9,9 @@
 		"lint": "eslint src --fix && prettier --write src/**/*.ts",
 		"precommit": "npm run lint",
 		"prepare": "husky install",
+		"release:major": "npm test && npm run build && npm version major -m \"chore(release): %s\" && npm publish",
+		"release:minor": "npm test && npm run build && npm version minor -m \"chore(release): %s\" && npm publish",
+		"release:patch": "npm test && npm run build && npm version patch -m \"chore(release): %s\" && npm publish",
 		"start": "npm run build && node .",
 		"test": "tsc --noEmit && eslint src"
 	},
