@@ -1,6 +1,6 @@
 {
 	"name": "royale-api-types",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Types for the Clash Royale API",
 	"main": "dist/index.js",
 	"types": "dist/index.d.ts",
