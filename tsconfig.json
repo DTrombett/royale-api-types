@@ -1,0 +1,22 @@
+{
+	"include": [
+		"src/**/*",
+	],
+	"extends": "@tsconfig/node16/tsconfig.json",
+	"compilerOptions": {
+		"moduleResolution": "node",
+		"allowSyntheticDefaultImports": true,
+		"allowUnreachableCode": false,
+		"alwaysStrict": true,
+		"isolatedModules": true,
+		"noFallthroughCasesInSwitch": true,
+		"noImplicitAny": true,
+		"noImplicitReturns": true,
+		"noImplicitThis": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"resolveJsonModule": true,
+		"outDir": "dist",
+		"declaration": true,
+	}
+}
