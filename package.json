@@ -9,9 +9,9 @@
 		"lint": "eslint src --fix && prettier --write src/**/*.ts",
 		"precommit": "npm run lint",
 		"prepare": "husky install",
-		"release:major": "npm test && npm run build && npm version major -m \"chore(release): %s\" && npm publish",
-		"release:minor": "npm test && npm run build && npm version minor -m \"chore(release): %s\" && npm publish",
-		"release:patch": "npm test && npm run build && npm version patch -m \"chore(release): %s\" && npm publish",
+		"release:major": "npm test && npm run build && npm version major -m \"chore(release): %s\" && git push && npm publish",
+		"release:minor": "npm test && npm run build && npm version minor -m \"chore(release): %s\" && git push && npm publish",
+		"release:patch": "npm test && npm run build && npm version patch -m \"chore(release): %s\" && git push && npm publish",
 		"start": "npm run build && node .",
 		"test": "tsc --noEmit && eslint src"
 	},
